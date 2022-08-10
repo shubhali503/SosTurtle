@@ -1,0 +1,47 @@
+.latest-news{
+    margin-top: 160px;
+
+    h2{
+        @extend %heading-lg;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 131px;
+
+        h4{
+            @extend %heading-sm;
+        }
+
+        h2{
+            text-transform: none;
+            margin-bottom: 26px;
+        }
+
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            color: $bluey-grey-two;
+        }
+
+        img{
+            margin-top: 33px;
+            margin-bottom: 54px;
+            width: 470px;
+            height: 215px;
+        }
+
+        p{
+            @extend %paragraph;
+            width: 90%;
+        }
+    }
+
+    &__btn{
+        font-size: 14px;
+        padding: 28px 34px;
+        display: block;
+        margin: auto;
+    }
+}

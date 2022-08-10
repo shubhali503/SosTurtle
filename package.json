@@ -1,0 +1,27 @@
+{
+  "name": "Sos-turtle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "gulp-svgmin": "^4.1.0",
+    "gulp-uglifycss": "^1.1.0",
+    "path": "^0.12.7"
+  }
+}

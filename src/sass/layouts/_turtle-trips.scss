@@ -1,0 +1,28 @@
+.turtle-trips{
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+
+    &__figure{
+        margin-right: 100px;
+
+        img{
+            width: 500px;
+            height: 600px;
+        }
+    }
+
+    &__desc{
+        h4{
+            @extend %heading-sm;
+        }
+
+        h2{
+            @extend %heading-lg;
+        }
+
+        p{
+            @extend %paragraph;
+        }
+    }
+}

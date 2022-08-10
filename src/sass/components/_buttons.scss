@@ -1,0 +1,15 @@
+.turtle-btn{
+    color: white;
+    background-color: $algae-green;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover{
+        background-color: $hover-color;
+    }
+}

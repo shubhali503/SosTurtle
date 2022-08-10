@@ -1,0 +1,28 @@
+.projects{
+    margin-top: 152px;
+    display: flex;
+
+    &__figure{
+        margin-right: 150px;
+
+        img{
+            width: 470px;
+            height: 562px;
+        }
+    }
+
+    &__desc{
+
+        h4{
+            @extend %heading-sm;
+        }
+
+        h2{
+            @extend %heading-lg;
+        }
+
+        p{
+            @extend %paragraph;
+        }
+    }
+}

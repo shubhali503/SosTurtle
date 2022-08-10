@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.latest-news__container h4, .turtle-trips__desc h4, .programs__desc h4, .projects__desc h4 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3e4c5b;
+  margin-bottom: 55px;
+}
+
+.latest-news h2, .turtle-trips__desc h2, .turtle-stats__left h2, .programs__desc h2, .projects__desc h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3e4c5b;
+  margin-bottom: 42px;
+}
+
+.latest-news__container p, .turtle-trips__desc p, .turtle-stats__left p, .programs__desc p, .projects__desc p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: #9aa8b6;
+  margin-bottom: 42px;
+}
+
+.container {
+  max-width: calc(100% - 260px);
+  margin: 0 auto;
+}
+
+.anchor {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #23cf5f;
+}
+.anchor:hover {
+  color: #26a853;
+}
+
+.turtle-btn {
+  color: white;
+  background-color: #23cf5f;
+  border: none;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.turtle-btn:hover {
+  background-color: #26a853;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.play-icon {
+  width: 38px;
+  height: 38px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.arrow-right {
+  fill: #23cf5f;
+  vertical-align: bottom;
+  margin-left: 40px;
+}
+
+.social-icons {
+  fill: #9aa8b6;
+}
+
+.header {
+  padding: 38px 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  line-height: 0;
+}
+.header__logo img {
+  width: 194px;
+  height: 35px;
+}
+.header__nav #nav-check, .header__nav .nav-btn {
+  display: none;
+}
+.header__nav .nav-links {
+  display: flex;
+}
+.header__nav .nav-links li {
+  font-size: 14px;
+  font-weight: bold;
+}
+.header__nav .nav-links li + li {
+  margin-left: 44px;
+}
+.header__nav .nav-links a {
+  color: white;
+  text-transform: uppercase;
+}
+.header__nav .nav-links a:hover {
+  color: #decccc;
+}
+.header__btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.header__btn:first-child {
+  margin-right: 30px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://i.ibb.co/Hphm7HB/kris-mikael-krister-556573-unsplash-2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-section .container .hero__caption {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  color: white;
+}
+.hero-section .container .hero__caption h4 {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  border-bottom: 2px solid white;
+  margin-bottom: 40px;
+}
+.hero-section .container .hero__caption h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-bottom: 33px;
+  width: 60%;
+}
+.hero-section .container .hero__caption a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hero-section .container .hero__caption a:hover {
+  color: #decccc;
+}
+.hero-section .container .hero__donation {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: white;
+  display: inline-flex;
+}
+.hero-section .container .hero__donation div {
+  padding: 32px 54px;
+  border-right: 2px solid #dfe4e8;
+}
+.hero-section .container .hero__donation div:first-of-type {
+  padding: 46px 54px;
+}
+.hero-section .container .hero__donation div:last-of-type {
+  border-right: 0;
+}
+.hero-section .container .hero__donation-btn {
+  font-size: 20px;
+  margin: 10px;
+  min-width: 300px;
+  min-height: 100px;
+}
+.hero-section .container .hero__donation-span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3e4c5b;
+  display: block;
+  line-height: 1.41;
+}
+.hero-section .container .hero__donation-span2 {
+  font-size: 14px;
+  color: #9aa8b6;
+  line-height: 2.21;
+}
+
+.projects {
+  margin-top: 152px;
+  display: flex;
+}
+.projects__figure {
+  margin-right: 150px;
+}
+.projects__figure img {
+  width: 470px;
+  height: 562px;
+}
+.programs {
+  margin-top: 160px;
+  display: flex;
+}
+.programs__desc {
+  margin-right: 150px;
+}
+.programs__figure img {
+  width: 470px;
+  height: 562px;
+}
+
+.turtle-stats {
+  margin-top: 160px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.turtle-stats__left h2 {
+  width: 60%;
+}
+.turtle-stats__left p {
+  width: 65%;
+}
+.turtle-stats__left .turtle-stats__stats {
+  display: inline-flex;
+}
+.turtle-stats__left .turtle-stats__stats div {
+  margin-right: 30px;
+}
+.turtle-stats__left .turtle-stats__stats div:last-child {
+  margin-right: 0;
+}
+.turtle-stats__left .turtle-stats__stats div span {
+  font-size: 80px;
+  font-weight: 300;
+  color: #23cf5f;
+}
+.turtle-stats__left .turtle-stats__stats div h5 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.turtle-stats__right {
+  padding: 105px 70px;
+  border: 4px solid #23cf5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.turtle-stats__right span {
+  font-size: 80px;
+  font-weight: 300;
+  color: #23cf5f;
+}
+.turtle-stats__right h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3e4c5b;
+  text-transform: uppercase;
+}
+
+.turtle-trips {
+  width: 100%;
+  margin-top: 250px;
+  display: flex;
+}
+.turtle-trips__figure {
+  margin-right: 100px;
+}
+.turtle-trips__figure img {
+  width: 500px;
+  height: 600px;
+}
+.latest-news {
+  margin-top: 160px;
+}
+.latest-news__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 131px;
+}
+.latest-news__container h2 {
+  text-transform: none;
+  margin-bottom: 26px;
+}
+.latest-news__container span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9aa8b6;
+}
+.latest-news__container img {
+  margin-top: 33px;
+  margin-bottom: 54px;
+  width: 470px;
+  height: 215px;
+}
+.latest-news__container p {
+  width: 90%;
+}
+.latest-news__btn {
+  font-size: 14px;
+  padding: 28px 34px;
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  margin-top: 144px;
+  background-color: #f9fcff;
+  padding: 144px 100px 75px;
+}
+.footer__subscribe {
+  text-align: center;
+}
+.footer__subscribe h5 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.73;
+  color: #3e4c5b;
+  margin: 0 auto;
+  margin-bottom: 79px;
+  width: 45%;
+}
+.footer__subscribe h5 span {
+  font-weight: bold;
+  color: #23cf5f;
+}
+.footer__subscribe form {
+  margin-bottom: 66px;
+  display: inline-block;
+  position: relative;
+  width: 60%;
+}
+.footer__subscribe form input {
+  width: 100%;
+  border: 1px solid #9aa8b6;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 27%;
+  line-height: 3.64;
+  font-family: "Montserrat", sans-serif;
+}
+.footer__subscribe form input::placeholder {
+  font-size: 14px;
+  color: #61788e;
+}
+.footer__subscribe form .footer__form-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 48px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 3.64;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom-copyright h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9aa8b6;
+}
+.footer__bottom-copyright h6 span {
+  font-weight: bold;
+  color: #61788e;
+}
+.footer__bottom-icons a {
+  margin-right: 40px;
+  color: #9aa8b6;
+  font-size: 20px;
+}
+.footer__bottom-icons a:last-of-type {
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .container {
+    max-width: calc(100% - 100px);
+  }
+  .hero-section .container .hero__caption h1 {
+    font-size: 45px;
+  }
+  .hero-section .container .hero__donation div {
+    padding: 20px 30px;
+  }
+  .hero-section .container .hero__donation div:first-of-type {
+    padding: 32px 30px;
+  }
+  .hero-section .container .hero__donation-btn {
+    min-width: 200px;
+    min-height: 70px;
+  }
+  .projects__figure {
+    margin-right: 60px;
+  }
+  .projects__figure img {
+    width: 420px;
+    height: 512px;
+  }
+  .programs__desc {
+    margin-right: 60px;
+  }
+  .programs__figure img {
+    width: 420px;
+    height: 512px;
+  }
+  .turtle-trips__figure {
+    margin-right: 60px;
+  }
+  .turtle-trips__figure img {
+    width: 450px;
+    height: 550px;
+  }
+  .latest-news__container img {
+    width: 420px;
+    height: 165px;
+  }
+  .footer__subscribe form input {
+    padding: 10px 30px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 20px 40px;
+  }
+  .header__logo {
+    order: -1;
+  }
+  .header__nav .nav-btn {
+    display: inline-block;
+  }
+  .header__nav .nav-btn label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .header__nav .nav-btn label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid white;
+  }
+  .header__nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #0e1d28;
+    height: 0px;
+    overflow-y: hidden;
+    top: 100%;
+    left: 0px;
+    transition: all 0.3s ease-in;
+  }
+  .header__nav .nav-links li {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .header__nav .nav-links li + li {
+    margin-left: 0;
+  }
+  .header__nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .header__nav #nav-check:checked ~ .nav-links {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .header__btns {
+    order: -1;
+  }
+  .container {
+    max-width: calc(100% - 80px);
+  }
+  .hero-section {
+    background: url("https://i.ibb.co/VTNj4bT/kris-mikael-krister-556573-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-section .container .hero__caption h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero-section .container .hero__caption h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  .hero-section .container .hero__caption a {
+    font-size: 18px;
+  }
+  .hero-section .container .hero__donation {
+    left: 20px;
+    right: 20px;
+  }
+  .hero-section .container .hero__donation div {
+    padding: 15px 25px;
+  }
+  .hero-section .container .hero__donation div:first-of-type {
+    padding: 25px;
+  }
+  .hero-section .container .hero__donation-btn {
+    font-size: 16px;
+    min-width: 180px;
+    min-height: 70px;
+  }
+  .hero-section .container .hero__donation-span {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .hero-section .container .hero__donation-span2 {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .hero__donation, .projects, .programs, .turtle-stats, .turtle-trips, .latest-news__container, .turtle-stats__stats, .footer__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects__figure {
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .projects__desc {
+    text-align: center;
+  }
+  .programs__desc {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .turtle-stats__left {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .turtle-stats__left h2, .turtle-stats__left p {
+    width: 100%;
+  }
+  .turtle-trips__figure {
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .turtle-trips__desc {
+    text-align: center;
+  }
+  .latest-news h2 {
+    text-align: center;
+  }
+  .latest-news__container {
+    margin-bottom: 60px;
+  }
+  .latest-news__container div {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer__subscribe h5 {
+    width: 90%;
+  }
+  .footer__subscribe form {
+    width: 100%;
+  }
+  .footer__subscribe form input {
+    padding: 10px 20px;
+  }
+  .footer__subscribe form .footer__form-btn {
+    padding: 5px 30px;
+  }
+  .footer__bottom-copyright {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .footer__subscribe form input {
+    padding: 10px;
+  }
+  .footer__subscribe form .footer__form-btn {
+    padding: 5px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,342 @@
+@include large-screen{
+    .container{
+        max-width: calc(100% - 100px);
+    }
+
+    .hero-section{
+
+        .container{
+
+            .hero{
+
+                &__caption{
+
+                    h1{
+                        font-size: 45px;
+                    }
+                }
+
+                &__donation{
+
+                    div{
+                        padding: 20px 30px;
+
+                        &:first-of-type{
+                            padding: 32px 30px;
+                        }
+                    }
+
+                    &-btn{
+                        min-width: 200px;
+                        min-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .projects{
+
+        &__figure{
+            margin-right: 60px;
+
+            img{
+                width: 420px;
+                height: 512px; 
+            }
+        }
+    }
+
+    .programs{
+
+        &__desc{
+            margin-right: 60px;
+        }
+
+        &__figure{
+            img{
+                width: 420px;
+                height: 512px;
+            }
+        }
+    }
+
+    .turtle-trips{
+
+        &__figure{
+            margin-right: 60px;
+
+            img{
+                width: 450px;
+                height: 550px;
+            }
+        }
+    }
+
+    .latest-news{
+
+        &__container{
+
+            img{
+                width: 420px;
+                height: 165px;
+            }
+        }
+    }
+
+    .footer{
+        &__subscribe{
+            form{
+                input{
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+
+    .header{
+        flex-wrap: wrap;
+        padding: 20px 40px;
+
+        &__logo{
+            order: -1;
+        }
+
+        &__nav{
+            
+            .nav-btn{
+                display: inline-block;
+        
+                label{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+        
+                    span{
+                        display: block;
+                        width: 25px;
+                        height: 10px;
+                        border-top: 2px solid white;
+                    }
+                }
+            }
+    
+            .nav-links{
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #0e1d28;
+                height: 0px;
+                overflow-y: hidden;
+                top: 100%;
+                left: 0px;
+                transition: all 0.3s ease-in;
+        
+                li{
+                    display: block;
+                    margin: 30px 0;
+                    text-align: center;
+
+                    & + li{
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            #nav-check{
+                &:not(:checked) ~ .nav-links {
+                    height: 0px;
+                }
+
+                &:checked ~ .nav-links {
+                    height: 100vh;
+                    overflow-y: auto;
+                }
+            }
+        }
+
+        &__btns{
+            order: -1;
+        }
+
+    }
+
+    .container{
+        max-width: calc(100% - 80px);
+    }
+
+    .hero-section{
+        background: url("https://i.ibb.co/VTNj4bT/kris-mikael-krister-556573-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container{
+
+            .hero{
+
+                &__caption{
+
+                    h4{
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+
+                    h1{
+                        font-size: 35px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                    }
+
+                    a{
+                        font-size: 18px;
+                    }
+                }
+
+                &__donation{
+                    left: 20px;
+                    right: 20px;
+
+                    div{
+                        padding: 15px 25px;
+
+                        &:first-of-type{
+                            padding: 25px;
+                        }
+                    }
+
+                    &-btn{
+                        font-size: 16px;
+                        min-width: 180px;
+                        min-height: 70px;
+                    }
+
+                    &-span{
+                        font-size: 18px;
+                        line-height: normal;
+                    }
+
+                    &-span2{
+                        font-size: 12px;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hero__donation, .projects, .programs, .turtle-stats, .turtle-trips, .latest-news__container, .turtle-stats__stats, .footer__bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects{
+        &__figure{
+            margin-right: 0;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        &__desc{
+            text-align: center;
+        }
+    }
+
+    .programs{
+
+        &__desc{
+            margin-right: 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    .turtle-stats{
+
+        &__left{
+            text-align: center;
+            margin-bottom: 40px;
+
+            h2, p{
+                width: 100%;
+            }
+        }
+    }
+
+    .turtle-trips{
+
+        &__figure{
+            margin-right: 0;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        &__desc{
+            text-align: center;
+        }
+    }
+
+    .latest-news{
+        h2{
+            text-align: center;
+        }
+
+        &__container{
+
+            margin-bottom: 60px;
+
+            div{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .footer{
+
+        &__subscribe{
+
+            h5{
+                width: 90%;
+            }
+
+            form{
+                width: 100%;
+
+                input{
+                    padding: 10px 20px;
+                }
+
+                .footer__form-btn{
+                    padding: 5px 30px;
+                }
+            }
+        }
+
+        &__bottom{
+
+            &-copyright{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@include mobile{
+    .footer{
+        &__subscribe{
+            form{
+                input{
+                    padding: 10px;
+                }
+                .footer__form-btn{
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
