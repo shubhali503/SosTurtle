@@ -8,6 +8,7 @@ const svgmin = require('gulp-svgmin');
 const path = require('path');
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
+const { series, parallel } = require('gulp');
 
 // export default () => (
 // 	gulp.src('./dist/images/*')
@@ -73,3 +74,4 @@ exports.cssmin = cssmin;
 exports.watch = watch;
 exports.svg = svg;
 exports.imgMin = imgMin;
+exports.default = parallel(style, cssmin, svg, imgMin);
