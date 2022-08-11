@@ -699,6 +699,12 @@ ul {
   }
 }
 @media only screen and (max-width: 560px) {
+  .header__btns {
+    margin-right: 15px;
+  }
+  .header__btn:first-child {
+    margin-right: 15px;
+  }
   .hero-section .container .hero__caption {
     top: 30%;
     transform: translateY(-30%);

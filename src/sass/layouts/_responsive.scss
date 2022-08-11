@@ -458,6 +458,18 @@
 
 @include mobile{
 
+    .header{
+        &__btns{
+            margin-right: 15px;
+        }
+
+        &__btn{
+            &:first-child{
+                margin-right: 15px;
+            }
+        }
+    }
+
     .hero-section{
         
         .container{
