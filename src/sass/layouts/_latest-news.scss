@@ -1,18 +1,19 @@
 .latest-news{
     margin-top: 160px;
 
-    h2{
-        @extend %heading-lg;
-    }
-
     &__container{
+        // width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 131px;
 
-        h4{
-            @extend %heading-sm;
-        }
+        // div{
+        //    &:first-of-type{
+        //     margin-right: 80px;
+        //    }
+
+        //    max-width: calc(50% - 40px);
+        // }
 
         h2{
             text-transform: none;
@@ -26,6 +27,7 @@
         }
 
         img{
+            display: block;
             margin-top: 33px;
             margin-bottom: 54px;
             width: 470px;
@@ -33,7 +35,6 @@
         }
 
         p{
-            @extend %paragraph;
             width: 90%;
         }
     }

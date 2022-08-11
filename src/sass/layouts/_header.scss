@@ -6,6 +6,7 @@
     right: 0px;
     z-index: 4;
     @include flexCenter(space-between);
+    transition: all 0.3s ease;
 
     &__logo{
         line-height: 0;
@@ -34,12 +35,14 @@
                 }
             }
     
-            a{
+            .link-primary{
                 color: white;
                 text-transform: uppercase;
+                padding: 6px 10px;
+                transition: all 0.3s ease;
 
                 &:hover{
-                    color: #decccc;
+                    background-color: #decccc;
                 }
             }
         }
@@ -58,4 +61,13 @@
 
     }
     
+}
+
+.header-colored{
+    background-color: #00b4d8;
+    padding: 24px 50px;
+}
+
+.header-transparent{
+    background-color: transparent;
 }

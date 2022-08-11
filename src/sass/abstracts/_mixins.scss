@@ -17,25 +17,19 @@
 }
 
 @mixin laptop {
-    @media only screen and (max-width: 1024px){
-        @content;
-    }
-}
-
-@mixin large-screen {
     @media only screen and (min-width: 761px) and (max-width: 1024px){
         @content;
     }
 }
 
 @mixin desktop {
-    @media only screen and (max-width: 1400px){
+    @media only screen and (min-width: 1025px) and (max-width: 1400px){
         @content;
     }
 }
 
-@mixin extra-large-screens {
-    @media only screen and (min-width: 1401px){
-        @content;
-    }
-}
+// @mixin extra-large-screens {
+//     @media only screen and (min-width: 1401px){
+//         @content;
+//     }
+// }

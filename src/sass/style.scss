@@ -4,11 +4,13 @@
 @import './base/typography';
 @import './abstracts/variables';
 @import './abstracts/mixins';
-@import './abstracts/placeholders';
+@import './components/headings';
+@import './components/paragraphs';
 @import './layouts/container';
 @import './components/anchors';
 @import './components/buttons';
 @import './components/icons';
+@import './components/spans';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/projects';

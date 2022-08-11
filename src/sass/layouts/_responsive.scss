@@ -1,6 +1,110 @@
-@include large-screen{
+@include desktop{
+
+    .projects{
+        
+        &__figure{
+            margin-right: 80px;
+
+            img{
+                width: 440px;
+                height: 532px;
+            }
+        }
+
+        &__desc{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+
+    .programs{
+        
+        &__desc{
+            margin-right: 80px;
+            h2{
+                font-size: 40px;
+            }
+        }
+
+        &__figure{
+            img{
+                width: 440px;
+                height: 532px;
+            }
+        }
+    }
+
+    .turtle-stats{
+        &__left{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+
+    .turtle-trips{
+        
+        &__figure{
+            margin-right: 80px;
+    
+            img{
+                width: 440px;
+                height: 532px;
+            }
+        }
+
+        &__desc{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+
+    .latest-news{
+        &__container{
+            h2{
+                font-size: 40px;
+            }
+
+            img{
+                width: 440px;
+                height: 185px;
+            }
+        }
+    }
+}
+
+@include laptop{
     .container{
         max-width: calc(100% - 100px);
+    }
+    
+    .header{
+
+        &__logo{
+            img{
+                width: 160px;
+                height: 28px;
+            }
+        }
+
+        &__nav{
+
+            .nav-links{
+                li{
+                    & + li{
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+
+        &__btn{
+            &:first-child{
+                margin-right: 20px;
+            }
+        }
     }
 
     .hero-section{
@@ -58,6 +162,17 @@
                 width: 420px;
                 height: 512px;
             }
+        }
+    }
+
+    .stats__span{
+        font-size: 60px;
+    }
+
+    .turtle-stats{
+        &__right{
+            min-width: 300px;
+            height: 300px;
         }
     }
 
@@ -129,7 +244,7 @@
                 position: absolute;
                 display: block;
                 width: 100%;
-                background-color: #0e1d28;
+                background-color: #00b4d8;
                 height: 0px;
                 overflow-y: hidden;
                 top: 100%;
@@ -189,7 +304,7 @@
                     h1{
                         font-size: 35px;
                         margin-bottom: 20px;
-                        width: 70%;
+                        width: 80%;
                     }
 
                     a{
@@ -198,14 +313,27 @@
                 }
 
                 &__donation{
-                    left: 20px;
-                    right: 20px;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 20px;
+                    left: 40px;
+                    right: 40px;
+                    flex-direction: column;
 
                     div{
+                        margin: 0 20px;
+                        text-align: center;
                         padding: 15px 25px;
+                        border-right: 0;
+                        border-bottom: 2px solid $pale-blue-two;
 
                         &:first-of-type{
                             padding: 25px;
+                        }
+
+                        &:last-of-type{
+                            border-bottom: 0;
                         }
                     }
 
@@ -293,6 +421,10 @@
                 text-align: center;
                 margin-bottom: 40px;
             }
+
+            img{
+                margin: 33px auto 54px;
+            }
         }
     }
 
@@ -327,7 +459,67 @@
 }
 
 @include mobile{
+
+    .hero-section{
+        
+        .container{
+
+            .hero{
+
+                &__caption{
+
+                    top: 30%;
+                    transform: translateY(-30%);
+
+                    h4, a{
+                        font-size: 18px;
+                    }
+
+                    h1{
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .turtle-stats{
+
+        &__left{
+
+            .turtle-stats__stats{
+
+                div{
+                    margin-right: 0;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    .projects, .programs, .turtle-trips{
+        &__figure{
+            img{
+                width: 440px;
+                height: 532px;
+            }
+        }
+    }
+
+    .latest-news{
+        &__container{
+            img{
+                width: 440px;
+                height: 195px;
+            }
+        }
+    }
+
     .footer{
+        padding: 80px 30px 75px;
+
         &__subscribe{
             form{
                 input{

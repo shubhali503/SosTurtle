@@ -1,9 +1,11 @@
 .projects{
     margin-top: 152px;
-    display: flex;
+    display: flex;  
 
     &__figure{
         margin-right: 150px;
+        // max-width: 30%;
+        // flex-basis: 40%;
 
         img{
             width: 470px;
@@ -12,17 +14,7 @@
     }
 
     &__desc{
-
-        h4{
-            @extend %heading-sm;
-        }
-
-        h2{
-            @extend %heading-lg;
-        }
-
-        p{
-            @extend %paragraph;
-        }
+        // max-width: 30%;
+        // flex-basis: 40%;
     }
 }

@@ -1,6 +1,6 @@
 .hero-section{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url("https://i.ibb.co/Hphm7HB/kris-mikael-krister-556573-unsplash-2x.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -10,11 +10,15 @@
     .container{
 
         .hero{
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
     
             &__caption{
                 position: absolute;
-                top: 40%;
-                transform: translateY(-40%);
+                top: 35%;
+                transform: translateY(-35%);
+                // margin-top: 12%;
                 color: white;
     
                 h4{
@@ -47,7 +51,7 @@
             &__donation{
                 position: absolute;
                 bottom: 0;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 border-radius: 4px;
                 background-color: white;
                 display: inline-flex;

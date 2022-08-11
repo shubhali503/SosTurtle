@@ -10,13 +10,6 @@ const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const { series, parallel } = require('gulp');
 
-// export default () => (
-// 	gulp.src('./dist/images/*')
-// 		.pipe(imagemin())
-// 		.pipe(gulp.dest('dist'))
-// );
-
-
 function style() {
     return gulp.src('./src/sass/**/*.scss')
     .pipe(sourcemaps.init())

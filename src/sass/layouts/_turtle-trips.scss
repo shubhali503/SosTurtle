@@ -11,18 +11,4 @@
             height: 600px;
         }
     }
-
-    &__desc{
-        h4{
-            @extend %heading-sm;
-        }
-
-        h2{
-            @extend %heading-lg;
-        }
-
-        p{
-            @extend %paragraph;
-        }
-    }
 }

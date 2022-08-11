@@ -4,21 +4,10 @@
 
     &__desc{
         margin-right: 150px;
-
-        h4{
-            @extend %heading-sm;
-        }
-
-        h2{
-            @extend %heading-lg;
-        }
-
-        p{
-            @extend %paragraph;
-        }
     }
 
     &__figure{
+
         img{
             width: 470px;
             height: 562px;
