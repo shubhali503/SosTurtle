@@ -201,14 +201,18 @@ ul {
   color: #decccc;
 }
 .hero-section .container .hero__donation {
+  width: 84%;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: white;
   display: inline-flex;
 }
 .hero-section .container .hero__donation div {
+  flex-grow: 1;
   padding: 32px 54px;
   border-right: 2px solid #dfe4e8;
 }
@@ -217,12 +221,6 @@ ul {
 }
 .hero-section .container .hero__donation div:last-of-type {
   border-right: 0;
-}
-.hero-section .container .hero__donation-btn {
-  font-size: 20px;
-  margin: 10px;
-  min-width: 300px;
-  min-height: 100px;
 }
 .hero-section .container .hero__donation-span {
   font-size: 20px;
@@ -235,6 +233,13 @@ ul {
   font-size: 14px;
   color: #9aa8b6;
   line-height: 2.21;
+}
+.hero-section .container .hero__donation-btn {
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 10px;
+  min-width: 300px;
+  min-height: 100px;
 }
 
 .projects {
@@ -533,6 +538,7 @@ ul {
   }
   .header__logo {
     order: -1;
+    flex: 2;
   }
   .header__nav .nav-btn {
     display: inline-block;
@@ -576,6 +582,7 @@ ul {
     overflow-y: auto;
   }
   .header__btns {
+    margin-right: 30px;
     order: -1;
   }
   .container {
@@ -601,11 +608,7 @@ ul {
   }
   .hero-section .container .hero__donation {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
-    left: 40px;
-    right: 40px;
     flex-direction: column;
   }
   .hero-section .container .hero__donation div {

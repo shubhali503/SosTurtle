@@ -218,6 +218,7 @@
 
         &__logo{
             order: -1;
+            flex: 2;
         }
 
         &__nav{
@@ -275,6 +276,7 @@
         }
 
         &__btns{
+            margin-right: 30px;
             order: -1;
         }
 
@@ -314,11 +316,7 @@
 
                 &__donation{
                     width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
                     margin-bottom: 20px;
-                    left: 40px;
-                    right: 40px;
                     flex-direction: column;
 
                     div{
