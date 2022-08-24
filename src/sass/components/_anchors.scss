@@ -1,3 +1,14 @@
+.link-primary{
+    color: white;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: #decccc;
+    }
+}
+
 .link-secondary{
     font-size: 14px;
     font-weight: bold;

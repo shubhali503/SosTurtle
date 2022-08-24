@@ -1,4 +1,21 @@
 @include desktop{
+    // .container{
+    //     max-width: calc(100% - 60px);
+    // }
+
+    .hero-section{
+        .container{
+            .hero{
+                &__donation{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .heading__lg{
+        font-size: 48px;
+    }
 
     .projects{
         
@@ -10,35 +27,18 @@
                 height: 532px;
             }
         }
-
-        &__desc{
-            h2{
-                font-size: 40px;
-            }
-        }
     }
 
     .programs{
         
         &__desc{
             margin-right: 80px;
-            h2{
-                font-size: 40px;
-            }
         }
 
         &__figure{
             img{
                 width: 440px;
                 height: 532px;
-            }
-        }
-    }
-
-    .turtle-stats{
-        &__left{
-            h2{
-                font-size: 40px;
             }
         }
     }
@@ -53,19 +53,10 @@
                 height: 532px;
             }
         }
-
-        &__desc{
-            h2{
-                font-size: 40px;
-            }
-        }
     }
 
     .latest-news{
         &__container{
-            h2{
-                font-size: 40px;
-            }
 
             img{
                 width: 440px;
@@ -108,13 +99,10 @@
     }
 
     .hero-section{
-
         .container{
-
             .hero{
 
                 &__caption{
-
                     h1{
                         font-size: 45px;
                     }
@@ -214,11 +202,10 @@
 
     .header{
         flex-wrap: wrap;
-        padding: 20px 40px;
+        padding: 15px 40px;
 
         &__logo{
             order: -1;
-            flex: 2;
         }
 
         &__nav{
@@ -228,14 +215,12 @@
         
                 label{
                     display: inline-block;
-                    width: 50px;
-                    height: 50px;
                     padding: 13px;
         
                     span{
                         display: block;
-                        width: 25px;
-                        height: 10px;
+                        width: 22px;
+                        height: 8px;
                         border-top: 2px solid white;
                     }
                 }
@@ -276,8 +261,10 @@
         }
 
         &__btns{
-            margin-right: 30px;
             order: -1;
+            flex: 2;
+            text-align: right;
+            margin-right: 30px;
         }
 
     }
@@ -297,6 +284,7 @@
             .hero{
 
                 &__caption{
+                    margin-bottom: 40px;
 
                     h4{
                         font-size: 18px;
@@ -315,19 +303,21 @@
                 }
 
                 &__donation{
-                    width: 80%;
+                    width: 70%;
                     margin-bottom: 20px;
                     flex-direction: column;
 
                     div{
                         margin: 0 20px;
                         text-align: center;
-                        padding: 15px 25px;
+                        // padding: 15px 25px;
+                        padding: 10px 25px;
                         border-right: 0;
                         border-bottom: 2px solid $pale-blue-two;
 
                         &:first-of-type{
-                            padding: 25px;
+                            // padding: 25px;
+                            padding: 20px 25px;
                         }
 
                         &:last-of-type{
@@ -338,7 +328,8 @@
                     &-btn{
                         font-size: 16px;
                         min-width: 180px;
-                        min-height: 70px;
+                        // min-height: 70px;
+                        min-height: 50px;
                     }
 
                     &-span{
@@ -471,15 +462,12 @@
     }
 
     .hero-section{
-        
         .container{
-
             .hero{
 
                 &__caption{
-
-                    top: 30%;
-                    transform: translateY(-30%);
+                    // top: 30%;
+                    // transform: translateY(-30%);
 
                     h4, a{
                         font-size: 18px;
@@ -491,16 +479,17 @@
                         width: 100%;
                     }
                 }
+
+                &__donation{
+                    width: 90%;
+                }
             }
         }
     }
 
     .turtle-stats{
-
         &__left{
-
             .turtle-stats__stats{
-
                 div{
                     margin-right: 0;
                     margin-bottom: 25px;

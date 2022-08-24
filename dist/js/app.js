@@ -1,4 +1,4 @@
-var myHeader = document.querySelector(".header");
+const myHeader = document.querySelector(".header");
 window.onscroll = function () { 
     "use strict";
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
